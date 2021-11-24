@@ -15,7 +15,34 @@
 				"navigationBarTitleText": "个人中心"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/Cart/Cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Goods/Goods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/auth/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "图书商城",
@@ -29,15 +56,27 @@
 	    "backgroundColor": "#ffffff",
 	    "list": [{
 	        "pagePath": "pages/index/index",
-	        "iconPath": "static/index.png",
-	        "selectedIconPath": "static/index-selected.png",
+	        "iconPath": "static/tabBarIcon/z2.png",
+	        "selectedIconPath": "static/tabBarIcon/z.png",
 	        "text": "首页"
 	    }, {
-	        "pagePath": "pages/center/index",
-	        "iconPath": "static/center.png",
-	        "selectedIconPath": "static/center-selected.png",
-	        "text": "我"
-	    }]
+	        "pagePath": "pages/Goods/Goods",
+	        "iconPath": "static/tabBarIcon/sp2.png",
+	        "selectedIconPath": "static/tabBarIcon/sp.png",
+	        "text": "商品"
+	    },
+		{
+		    "pagePath": "pages/Cart/Cart",
+		    "iconPath": "static/tabBarIcon/gwc2.png",
+		    "selectedIconPath": "static/tabBarIcon/gwc.png",
+		    "text": "购物车"
+		},
+		{
+		    "pagePath": "pages/center/index",
+		    "iconPath": "static/tabBarIcon/g2.png",
+		    "selectedIconPath": "static/tabBarIcon/g.png",
+		    "text": "我"
+		}]
 	},
 	"condition" : { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)

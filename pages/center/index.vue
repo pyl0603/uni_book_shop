@@ -12,7 +12,7 @@
 			}
 		},
 		onLoad() {
-
+			this.$u.utils.isLogin()
 		},
 		methods: {
 
